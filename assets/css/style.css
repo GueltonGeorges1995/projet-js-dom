@@ -10560,4 +10560,21 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+.navsection:hover {
+  background-color: #007bff;
+}
+
+.navsection:hover a {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #007bff;
+}
+
+.active a {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

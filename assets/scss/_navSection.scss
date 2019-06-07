@@ -1,0 +1,18 @@
+.navsection { 
+    &:hover {
+        background-color: $primary;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+// Hover sur les elements de la navsection
+
+.active {
+    background-color: $primary;
+    a{
+        color: white;
+    }
+}
+// quand on est actif dans un des onglets

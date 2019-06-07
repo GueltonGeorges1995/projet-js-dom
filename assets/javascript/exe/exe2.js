@@ -10,7 +10,6 @@ for(let i = 0 ; i < btns.length ; i++){
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
         if(btns[i].classList.contains('active')){
-            console.log(i)
             if(i === 0){
                 exeItem[0].classList.remove('d-none');
                 exeItem[1].classList.add('d-none');

@@ -10577,4 +10577,26 @@ a.text-dark:hover, a.text-dark:focus {
 .active a {
   color: white;
 }
+
+.square {
+  width: 50px;
+  height: 50px;
+}
+
+.bigsquare {
+  width: 200px;
+  height: 200px;
+}
+
+.fixAlignExe4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */

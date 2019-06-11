@@ -31,14 +31,13 @@ let reponse = Number(0);
 boutonCal.forEach(function(element) {
     element.addEventListener('click',()=>{
     ecran.value += element.value;
-    if(element.classList.contains('equal')){
-        let x = ecran.value;
-        reponse = eval(x)
-        ecran.value = reponse
-    }
-    else if (element.classList.contains('correction')){
-        ecran.value = ''
-    }
-
+        if(element.classList.contains('equal')){
+            let x = ecran.value;
+            reponse = eval(x);
+            ecran.value = reponse;
+        }
+        else if (element.classList.contains('correction')){
+            ecran.value = '';
+        }
     })
 });

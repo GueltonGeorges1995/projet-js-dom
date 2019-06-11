@@ -17,6 +17,7 @@ for(let i = 0 ; i < btns.length ; i++){
                 exeItem[3].classList.add('d-none');
                 exeItem[4].classList.add('d-none');
                 exeItem[5].classList.add('d-none');
+                exeItem[6].classList.add('d-none');
             }
             else if (i === 1){
                 exeItem[0].classList.add('d-none');
@@ -25,6 +26,7 @@ for(let i = 0 ; i < btns.length ; i++){
                 exeItem[3].classList.add('d-none');
                 exeItem[4].classList.add('d-none');
                 exeItem[5].classList.add('d-none');
+                exeItem[6].classList.add('d-none');
             }
             else if (i === 2){
                 exeItem[0].classList.add('d-none');
@@ -33,6 +35,7 @@ for(let i = 0 ; i < btns.length ; i++){
                 exeItem[3].classList.add('d-none');
                 exeItem[4].classList.add('d-none');
                 exeItem[5].classList.add('d-none');
+                exeItem[6].classList.add('d-none');
             }
             else if (i === 3){
                 exeItem[0].classList.add('d-none');
@@ -41,6 +44,7 @@ for(let i = 0 ; i < btns.length ; i++){
                 exeItem[3].classList.remove('d-none');
                 exeItem[4].classList.add('d-none');
                 exeItem[5].classList.add('d-none');
+                exeItem[6].classList.add('d-none');
             }
             else if (i === 4){
                 exeItem[0].classList.add('d-none');
@@ -49,6 +53,7 @@ for(let i = 0 ; i < btns.length ; i++){
                 exeItem[3].classList.add('d-none');
                 exeItem[4].classList.remove('d-none');
                 exeItem[5].classList.add('d-none');
+                exeItem[6].classList.add('d-none');
             }
             else if (i === 5){
                 exeItem[0].classList.add('d-none');
@@ -57,6 +62,16 @@ for(let i = 0 ; i < btns.length ; i++){
                 exeItem[3].classList.add('d-none');
                 exeItem[4].classList.add('d-none');
                 exeItem[5].classList.remove('d-none');
+                exeItem[6].classList.add('d-none');
+            }
+            else if (i === 6){
+                exeItem[0].classList.add('d-none');
+                exeItem[1].classList.add('d-none');
+                exeItem[2].classList.add('d-none');
+                exeItem[3].classList.add('d-none');
+                exeItem[4].classList.add('d-none');
+                exeItem[5].classList.add('d-none');
+                exeItem[6].classList.remove('d-none');
             }
         }
         

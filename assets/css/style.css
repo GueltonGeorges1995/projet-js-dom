@@ -10599,4 +10599,17 @@ a.text-dark:hover, a.text-dark:focus {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.input1Exe7 {
+  width: 93%;
+}
+
+.borderTurfu {
+  border-top: 1px solid lightslategray;
+  border-bottom: 1px solid lightslategray;
+}
+
+.borderCol {
+  border-top: 1px solid lightslategray;
+}
 /*# sourceMappingURL=style.css.map */

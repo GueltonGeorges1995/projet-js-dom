@@ -14,11 +14,31 @@ let rep = 0;
 btnLvl1.addEventListener('click',()=>{
     nb1 = Number(input1Lvl1.value);
     nb2 = Number(input2Lvl1.value);
-    rep = (nb1+nb2)
-    repLvl1.innerText = rep
+    rep = (nb1+nb2);
+    repLvl1.innerText = rep;
 })
 // nb1 et nb2 prennent la valeur du premier et deuxième input
 // rep prend l'addition des deux nb
 
 
 // NIVEAU 2
+
+let ecran = document.querySelector('#ecranExe6');
+let boutonCal = document.querySelectorAll('.boutonCal');
+
+let reponse = Number(0);
+
+boutonCal.forEach(function(element) {
+    element.addEventListener('click',()=>{
+    ecran.value += element.value;
+    if(element.classList.contains('equal')){
+        let x = ecran.value;
+        reponse = eval(x)
+        ecran.value = reponse
+    }
+    else if (element.classList.contains('correction')){
+        ecran.value = ''
+    }
+
+    })
+});

@@ -8,26 +8,29 @@ let btn3Exe7 = document.querySelector('#btn3Exe7');
 
 btn1Exe7.addEventListener('click',()=>{
     btn1Exe7.classList.add('btn-primary');
-    btn1Exe7.classList.remove('bg-light')
     btn1Exe7.classList.remove('btn-outline-primary')
     btn2Exe7.classList.remove('btn-primary');
-    btn2Exe7.classList.add('bg-light')
     btn2Exe7.classList.add('btn-outline-primary');
     btn3Exe7.classList.remove('btn-primary');
-    btn3Exe7.classList.add('bg-light')
     btn3Exe7.classList.add('btn-outline-primary');
 })
 
 btn2Exe7.addEventListener('click',()=>{
     btn1Exe7.classList.remove('btn-primary');
-    btn1Exe7.classList.add('bg-light');
     btn1Exe7.classList.add('btn-outline-primary');
     btn2Exe7.classList.add('btn-primary');
-    btn2Exe7.classList.remove('bg-light')
     btn2Exe7.classList.remove('btn-outline-primary');
-    btn3Exe7.classList.remove('bg-primary');
-    btn3Exe7.classList.add('btn-light')
+    btn3Exe7.classList.remove('btn-primary');
     btn3Exe7.classList.add('btn-outline-primary');
+})
+
+btn3Exe7.addEventListener('click',()=>{
+    btn1Exe7.classList.remove('btn-primary');
+    btn1Exe7.classList.add('btn-outline-primary');
+    btn2Exe7.classList.remove('btn-primary');
+    btn2Exe7.classList.add('btn-outline-primary');
+    btn3Exe7.classList.remove('btn-outline-primary');
+    btn3Exe7.classList.add('btn-primary');
 })
 
    
@@ -77,11 +80,25 @@ input1Exe7.addEventListener('keyup',(e)=>{
                 if(inputCheck.checked){
                     divContainer.classList.add('bg-success');
                     divContainer.classList.remove('bg-secondary');
-
+                    
+                    if(btn3Exe7.classList.contains('btn-primary')){
+                        if(inputCheck.checked){
+                            divContainer.classList.add('d-none')
+                        }
+                    }
                 }
                 else {
                     divContainer.classList.remove('bg-success');
-                    divContainer.classList.add('bg-secondary')
+                    divContainer.classList.add('bg-secondary');
+
+                    if(btn2Exe7.classList.contains('btn-primary')){
+                        if(inputCheck.checked){
+
+                        }
+                        else {
+                            divContainer.classList.add('d-none')
+                        }
+                    } 
                 }
             })
 
@@ -92,6 +109,10 @@ input1Exe7.addEventListener('keyup',(e)=>{
             btn2Exe7.addEventListener('click',()=>{
                 if(divContainer.classList.contains('bg-success')){
                     divContainer.classList.remove('d-none');
+
+                    
+
+
                 }
                 else{
                     divContainer.classList.add('d-none')
@@ -120,10 +141,12 @@ input1Exe7.addEventListener('keyup',(e)=>{
                 label.classList.add('d-none');
             })
             inputCol.addEventListener('keyup',(e)=>{
-                if(e.key === 'Enter'){
-                    label.innerText = inputCol.value 
-                    label.classList.remove('d-none');
-                    inputCol.classList.add('d-none');
+                if(inputCol.value != ''){ 
+                    if(e.key === 'Enter'){
+                        label.innerText = inputCol.value 
+                        label.classList.remove('d-none');
+                        inputCol.classList.add('d-none');
+                    }
                 }
             })
 

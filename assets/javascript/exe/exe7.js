@@ -52,7 +52,7 @@ input1Exe7.addEventListener('keyup',(e)=>{
 
             let label = document.createElement('label');
             label.style.width ='93%';
-            label.classList.add('ml-1')
+            label.classList.add('ml-3')
             label.innerText = input1Exe7.value
 
 
@@ -138,17 +138,28 @@ input1Exe7.addEventListener('keyup',(e)=>{
             // input sur label
             label.addEventListener('click',()=>{
                 inputCol.classList.remove('d-none');
+                inputCol.value = label.innerText 
                 label.classList.add('d-none');
+
+                
             })
+
+
             inputCol.addEventListener('keyup',(e)=>{
-                if(inputCol.value != ''){ 
-                    if(e.key === 'Enter'){
+                if(e.key === 'Enter') {
+                    label.classList.remove('d-none');
+                    inputCol.classList.add('d-none');
+                    if(inputCol.value != ''){
                         label.innerText = inputCol.value 
-                        label.classList.remove('d-none');
-                        inputCol.classList.add('d-none');
                     }
                 }
             })
+
+
+
+
+
+
 
 
             // je remet l'input à zéro

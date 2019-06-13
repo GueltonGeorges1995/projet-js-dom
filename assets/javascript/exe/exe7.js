@@ -74,6 +74,9 @@ input1Exe7.addEventListener('keyup',(e)=>{
             divCol.appendChild(button);
             
             
+
+
+
             
             //---- ajout de la couleur quand on check
             inputCheck.addEventListener('click',()=>{
@@ -96,11 +99,20 @@ input1Exe7.addEventListener('keyup',(e)=>{
 
                         }
                         else {
-                            divContainer.classList.add('d-none')
+                            divContainer.classList.add('d-none');
+                            
                         }
                     } 
                 }
             })
+            if(btn2Exe7.classList.contains('btn-primary')){
+                divContainer.classList.add('d-none');
+                    
+                }
+
+
+
+
 
             //----- gestion des trois boutons
             btn1Exe7.addEventListener('click',()=>{
@@ -140,11 +152,8 @@ input1Exe7.addEventListener('keyup',(e)=>{
                 inputCol.classList.remove('d-none');
                 inputCol.value = label.innerText 
                 label.classList.add('d-none');
-
-                
+                inputCol.select()
             })
-
-
             inputCol.addEventListener('keyup',(e)=>{
                 if(e.key === 'Enter') {
                     label.classList.remove('d-none');
@@ -154,12 +163,6 @@ input1Exe7.addEventListener('keyup',(e)=>{
                     }
                 }
             })
-
-
-
-
-
-
 
 
             // je remet l'input à zéro
